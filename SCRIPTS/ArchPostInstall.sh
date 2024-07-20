@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm git
 git clone https://aur.archlinux.org/yay.git && cd yay
 yes | makepkg -si
 
-#Copying my configs for later use
+#Copying configs for later use
 cd /home/$USER/Downloads/
 mkdir configs
 cd configs
@@ -47,7 +47,28 @@ yay -S --noconfirm firefox
 yay -S --noconfirm thorium-browser-bin
 yay -S --noconfirm youtube-music-bin
 
+
 # DE post-installation
 echo "Want to run DE post installation(y/n)"
 read ans
-echo "Choose your desktop"
+if [[ $ans == "y" ]]; then
+    echo "Choose your desktop:
+    1: Gnome
+    2: KDE Plasma
+    3: xfce"
+    read de
+    cd /home/$USER/Downloads/ && mkdir DE-setups && cd DE-setups
+    if [[ $de == 1 ]]; then
+        echo "Still working on gnome setup"
+    elif [[ $de == 2 ]]; then
+        curl -o plasma.sh https://raw.githubusercontent.com/called-Ishan/HORIZON/main/SCRIPTS/plasma.sh
+        chmod +x plasma.sh
+        ./plasma.sh
+    elif [[ $de == 3 ]]; then
+        echo "Still working on xfce setup"
+    fi
+
+
+else
+    echo "Thanks for using"
+fi
