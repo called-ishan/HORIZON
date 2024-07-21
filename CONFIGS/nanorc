@@ -42,7 +42,7 @@
 ## The characters treated as closing brackets when justifying paragraphs.
 ## This may not include any blank characters.  Only closing punctuation,
 ## optionally followed by these closing brackets, can end sentences.
-# set brackets ""')>]}"
+ set brackets ""')>]}"
 
 ## Automatically hard-wrap the current line when it becomes overlong.
 # set breaklonglines
@@ -91,7 +91,7 @@
 ## The opening and closing brackets that are found by a matching-bracket
 ## search.  This may not contain blank characters.  The opening brackets
 ## must come before the closing ones, and they must be in the same order.
-# set matchbrackets "(<[{)>]}"
+ set matchbrackets "(<[{)>]}"
 
 ## Suppress the title bar and show the filename plus a cursor-position
 ## percentage in the space of the status bar.
