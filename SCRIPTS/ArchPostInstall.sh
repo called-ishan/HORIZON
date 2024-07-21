@@ -14,8 +14,6 @@ curl -o 90210.theme.sh https://raw.githubusercontent.com/called-Ishan/HORIZON/ma
 curl -o .nanorc https://raw.githubusercontent.com/called-Ishan/HORIZON/main/CONFIGS/nanorc
 curl -o user.js https://raw.githubusercontent.com/called-Ishan/HORIZON/main/CONFIGS/firefox.user.js
 
-sudo chmod +x /home/$USER/Downloads/postinstall-part2.sh
-
 #Editing pacman.conf
 sudo sed -i '/Color/s/^#//g' /etc/pacman.conf
 sudo sed -i '/ParallelDownloads/s/^#/ILoveCandy\n/g' /etc/pacman.conf
