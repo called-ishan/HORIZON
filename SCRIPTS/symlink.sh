@@ -9,7 +9,6 @@ DOTFILES_MAP=(
     ["bashrc"]="~/.bashrc"
     ["nanorc"]="~/.nanorc"
     ["firefox.user.js"]="~/.mozilla/firefox/user.js"
-    ["90210.theme.sh"]="~/.oh-my-bash/themes/90210/90210.theme.sh"
 )
 
 
