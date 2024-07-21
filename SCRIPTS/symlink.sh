@@ -12,6 +12,7 @@ DOTFILES_MAP=(
     ["90210.theme.sh"]="~/.oh-my-bash/themes/90210/90210.theme.sh"
 )
 
+
 # Function to create symlinks with custom locations
 create_symlinks() {
     for original_file in "${!DOTFILES_MAP[@]}"; do
@@ -34,7 +35,7 @@ create_symlinks() {
             # Create the new symlink
             ln -s "$DOTFILES_DIR/$original_file" "$symlink_path"
             echo "Created symlink for $original_file as $symlink_path"
-        }
+        fi
     done
 }
 
@@ -42,4 +43,3 @@ create_symlinks() {
 create_symlinks
 
 echo "Symlinking completed."
-
