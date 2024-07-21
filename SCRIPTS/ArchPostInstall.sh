@@ -47,7 +47,6 @@ yay -S --noconfirm firefox
 yay -S --noconfirm thorium-browser-bin
 yay -S --noconfirm youtube-music-bin
 
-
 # DE post-installation
 echo "Want to run DE post installation(y/n)"
 read ans
