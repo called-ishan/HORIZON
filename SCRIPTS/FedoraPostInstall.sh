@@ -1,7 +1,10 @@
-sudo dnf install libva-intel-driver
+#Installing codecs
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf install vlc
+
+#enabling hardware acceleration for Intel(old) cpu(fixes horizontal line issues in YouTube browser)
+sudo dnf install libva-intel-driver
 
 #Copying configs for later use
 cd /home/$USER/Downloads/
