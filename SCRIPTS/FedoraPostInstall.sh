@@ -25,6 +25,9 @@ cp /home/$USER/Downloads/configs/.bashrc /home/$USER
 # Configuring nano
 cp /home/$USER/Downloads/configs/.nanorc /home/$USER
 
+# Removing temp files
+rm -rf /home/$USER/Downloads/configs
+
 # DE post-installation
 echo "Want to run DE post installation(y/n)"
 read ans
